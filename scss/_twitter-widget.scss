@@ -1,0 +1,68 @@
+
+
+
+// twitter-widget.scss
+
+
+
+#tw-widget1 {
+	width: 100%;
+	margin: 0 auto;
+
+	a {
+		color: #4099FF;
+	}
+
+	ul {
+		padding-left: 30px;
+		list-style-type: none;
+	}
+	li {
+		position: relative;
+		margin-bottom: 25px;
+
+		&:before {
+			font-family: 'FontAwesome';
+			content: '\f099';
+			margin: 0;
+			color: #4099FF;
+			position: absolute;
+			left: -30px;
+			font-size: 18px;
+		}
+	}
+	.user {
+	    display: none;
+	}
+	p.interact {
+	    display: none;
+	}
+
+	p.timePosted {
+	    margin-top: 0;
+	    margin-bottom: 0;
+	    color: #777;
+	    font-size: 13px;
+	}
+	p.tweet {
+	    margin-top: 3px;
+	    color: #bbb;
+	    font-size: 14px;
+	}
+}
+
+
+
+#instafeed {
+
+	img {
+	    width: 25.5%;
+	    padding: 5px;
+	    border-radius: 1px;
+	    transition: opacity .3s ease;
+
+	    &:hover {
+			opacity: 0.8;
+		}
+	}
+}

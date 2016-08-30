@@ -1,0 +1,180 @@
+
+
+
+// social-widgets.scss
+
+
+
+#tw-widget1 {
+	width: 100%;
+	margin: 0 auto;
+
+	a {
+		color: #4099FF;
+	}
+
+	ul {
+		padding-left: 30px;
+		list-style-type: none;
+	}
+	li {
+		position: relative;
+		margin-bottom: 25px;
+
+		&:before {
+			font-family: 'FontAwesome';
+			content: '\f099';
+			margin: 0;
+			color: #4099FF;
+			position: absolute;
+			left: -30px;
+			font-size: 18px;
+		}
+	}
+	.user {
+	    display: none;
+	}
+	p.interact {
+	    display: none;
+	}
+
+	p.timePosted {
+	    margin-top: 0;
+	    margin-bottom: 0;
+	    color: #bbb;
+	    font-size: 13px;
+	}
+	p.tweet {
+	    margin-top: 3px;
+	    color: #222;
+	    font-size: 14px;
+	}
+}
+
+
+
+#instafeed {
+
+	a {
+		display: inline-block;
+		width: 20%;
+		float: left;
+		padding: 4px;
+		position: relative;
+
+		@media screen and (max-width: 1000px) {
+			width: 33.33%;
+		}
+
+		span.icon {
+			position: absolute;
+			content: '';
+			/*font-family: 'FontAwesome';*/
+			top: 10px;
+			right: 15px;
+			color: rgba(255,255,255,1);
+			font-size: 17px;
+			z-index: 5;
+		}
+
+		&:first-child {
+			width: 40%;
+
+			@media screen and (max-width: 1000px) {
+				width: 33.33%;
+			}
+		}
+
+		&:hover {
+
+			&:first-child {
+				
+				p {
+
+					span.likes, span.comments {
+						font-size: 18px;
+
+						i.fa {
+							margin-right: 5px;
+						}
+					}
+
+					span.likes {
+				    	margin-right: 25px;
+					}
+				}
+			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				background: rgba(0, 0, 0, 0.4);
+				left: 4px;
+				right: 4px;
+				top: 4px;
+				bottom: 4px;
+				z-index: 4;
+			}
+
+			p {
+				font-family: "faricy-new-web",sans-serif;
+				position: absolute;
+				display: block;
+				width: 100%;
+				text-align: center;
+				top: 43%;
+				z-index: 5;
+				left: 0px;
+			}
+
+			span.likes, span.comments {
+				color: #fff;
+				font-size: 14px;
+				text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+
+				i.fa {
+					margin-right: 4px;
+				}
+			}
+
+			span.likes {
+			    margin-right: 20px;
+
+			    /*&:before {
+			    	position:absolute;
+			    	content: '\f004';
+			    	font-family: 'FontAwesome';
+			    	color: #fff;
+			    	left: -15px;
+			    } */
+			}
+		}
+	}
+
+	img {
+	    width: 100%;
+	    /*padding: 2px;*/
+	    /*background-color: #fff;*/
+	    /*border-radius: 1px;*/
+	    /*transition: opacity .3s ease;*/
+	    /*box-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.1), -0.5px -0.5px 1px rgba(0,0,0,0.1); */
+	    /*border: 1px solid #eee;*/
+	    position: relative;
+
+	    &:hover {
+			opacity: 0.8;
+		}
+	}
+
+	p {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
